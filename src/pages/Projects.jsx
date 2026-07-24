@@ -15,13 +15,14 @@ export default function Projects() {
   const filteredProjects = useMemo(() => {
     const query = searchTerm.trim().toLowerCase();
     return projects.filter((project) => {
-      const matchesCategory = activeCategory === 'all' || project.filterCategory === activeCategory;
+      const matchesCategory = activeCategory === 'all' || project.filterCategories.includes(activeCategory);
       if (!matchesCategory) return false;
       if (!query) return true;
       const haystack = [
         project.title[lang],
         project.description[lang],
         project.category[lang],
+        project.platform,
         ...project.technologies,
       ]
         .join(' ')

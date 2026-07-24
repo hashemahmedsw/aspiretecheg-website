@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ProjectVisual from './ProjectVisual';
+import PlatformBadge from './PlatformBadge';
 
 export default function ProjectCard({ project, index = 0 }) {
   const { lang, t } = useLanguage();
+  const altText =
+    lang === 'ar' ? `لقطة شاشة لموقع ${project.title[lang]}` : `Screenshot of the ${project.title[lang]} website`;
 
   return (
     <motion.div
@@ -20,7 +23,7 @@ export default function ProjectCard({ project, index = 0 }) {
         className="group flex h-full flex-col rounded-2xl border border-border bg-surface p-4 transition-all duration-300 hover:-translate-y-1 hover:border-border-strong hover:bg-surface-hover"
       >
         <div className="relative">
-          <ProjectVisual project={project} />
+          <ProjectVisual project={project} alt={altText} />
           {project.featured && (
             <span className="absolute top-3 start-3 rounded-full bg-bg/80 px-3 py-1 text-xs font-medium text-accent-2 backdrop-blur">
               {t.common.featured}
@@ -30,8 +33,11 @@ export default function ProjectCard({ project, index = 0 }) {
 
         <div className="mt-5 flex items-start justify-between gap-3">
           <div>
-            <p className="mono text-xs uppercase tracking-wider text-ink-faint">{project.category[lang]}</p>
-            <h3 className="mt-1.5 text-lg font-semibold text-ink">{project.title[lang]}</h3>
+            <div className="flex items-center gap-2">
+              <PlatformBadge platform={project.platform} />
+              <p className="mono text-xs uppercase tracking-wider text-ink-faint">{project.category[lang]}</p>
+            </div>
+            <h3 className="mt-2 text-lg font-semibold text-ink">{project.title[lang]}</h3>
           </div>
           <ArrowUpRight
             className="mt-1 h-5 w-5 shrink-0 text-ink-faint transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-2 rtl:-scale-x-100"

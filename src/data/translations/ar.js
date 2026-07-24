@@ -13,8 +13,7 @@ export default {
     },
     projects: {
       title: 'أعمالنا | AspireTechEg',
-      description:
-        'اكتشف المنصات وأدوات الأتمتة والمنتجات الرقمية التي طورتها AspireTechEg — من أنظمة الحجز إلى منصات الرعاية الصحية.',
+      description: 'اكتشف متاجر Shopify وWordPress التي صممتها وطورتها وخصصتها AspireTechEg لعملاء حقيقيين.',
     },
     about: {
       title: 'من نحن | AspireTechEg',

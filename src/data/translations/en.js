@@ -14,7 +14,7 @@ export default {
     projects: {
       title: 'Projects | AspireTechEg',
       description:
-        'Explore the platforms, automation tools, and digital products AspireTechEg has engineered — from booking systems to healthcare platforms.',
+        'Explore the Shopify and WordPress stores AspireTechEg has designed, built, and customized for real clients.',
     },
     about: {
       title: 'About | AspireTechEg',
@@ -123,7 +123,7 @@ export default {
   featuredProjects: {
     eyebrow: 'Selected Work',
     title: 'Projects built to perform',
-    description: 'A sample of the platforms, tools, and systems we have designed and engineered.',
+    description: 'A sample of the Shopify and WordPress stores we have designed, built, and customized for real clients.',
     viewAll: 'View All Projects',
     viewProject: 'View Project',
   },
@@ -132,7 +132,7 @@ export default {
     eyebrow: 'Our Work',
     title: 'Projects that solve real problems',
     description:
-      'From automation platforms to healthcare and travel products, here is what we have built and who we built it for.',
+      'From Shopify fashion stores to WordPress e-commerce platforms, here is what we have built and who we built it for.',
     searchPlaceholder: 'Search projects…',
     searchLabel: 'Search projects',
     filterLabel: 'Filter by category',
@@ -146,11 +146,10 @@ export default {
   projectDetail: {
     backToProjects: 'Back to Projects',
     overview: 'Overview',
-    challenge: 'The Challenge',
-    solution: 'The Solution',
-    keyFeatures: 'Key Features',
+    servicesDelivered: 'Services Delivered',
     technologies: 'Technologies Used',
-    results: 'Results & Impact',
+    websiteLabel: 'Website',
+    visitWebsite: 'Visit Website',
     nextProject: 'Next Project',
     ctaTitle: 'Have a similar project in mind?',
     ctaDescription: 'Tell us what you are building — we will help you figure out the right way to build it.',

@@ -120,7 +120,7 @@ export default {
   featuredProjects: {
     eyebrow: 'أعمال مختارة',
     title: 'مشاريع مبنية لتؤدي بكفاءة',
-    description: 'نماذج من المنصات والأدوات والأنظمة التي صممناها وطورناها.',
+    description: 'نماذج من متاجر Shopify وWordPress التي صممناها وطورناها وخصصناها لعملاء حقيقيين.',
     viewAll: 'عرض كل المشاريع',
     viewProject: 'عرض المشروع',
   },
@@ -128,7 +128,7 @@ export default {
   projectsPage: {
     eyebrow: 'أعمالنا',
     title: 'مشاريع تحل مشكلات حقيقية',
-    description: 'من منصات الأتمتة إلى منتجات الرعاية الصحية والسفر، هذا ما بنيناه ولمن بنيناه.',
+    description: 'من متاجر Shopify للأزياء إلى منصات التجارة الإلكترونية على WordPress، هذا ما بنيناه ولمن بنيناه.',
     searchPlaceholder: 'ابحث في المشاريع…',
     searchLabel: 'البحث في المشاريع',
     filterLabel: 'تصفية حسب الفئة',
@@ -142,11 +142,10 @@ export default {
   projectDetail: {
     backToProjects: 'العودة إلى المشاريع',
     overview: 'نظرة عامة',
-    challenge: 'التحدي',
-    solution: 'الحل',
-    keyFeatures: 'أبرز المزايا',
+    servicesDelivered: 'الخدمات المقدمة',
     technologies: 'التقنيات المستخدمة',
-    results: 'النتائج والأثر',
+    websiteLabel: 'الموقع الإلكتروني',
+    visitWebsite: 'زيارة الموقع',
     nextProject: 'المشروع التالي',
     ctaTitle: 'لديك مشروع مشابه في بالك؟',
     ctaDescription: 'أخبرنا بما تعمل عليه، وسنساعدك في تحديد الطريقة الصحيحة لبنائه.',

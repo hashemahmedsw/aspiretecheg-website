@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AspireTechEg</title>
+    <!--
+      GitHub Pages has no server-side rewrites, so a deep link like
+      /en/projects/bls-booking-bot returns a real 404 instead of index.html.
+      This script (the rafgraph/spa-github-pages technique) encodes the
+      requested path into a query string and redirects to the site root,
+      where the inline script in index.html restores it via history.replaceState
+      before React Router renders. This keeps clean, shareable URLs on a
+      100% static host.
+
+      pathSegmentsToKeep:
+        - 1 for GitHub *project* pages served at /<repo-name>/...
+        - 0 for a user/org page (username.github.io) or a custom domain
+    -->
+    <script>
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname
+            .split('/')
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join('/') +
+          '/?/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(pathSegmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

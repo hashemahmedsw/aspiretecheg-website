@@ -26,7 +26,7 @@ export default function ProjectDetail() {
   return (
     <>
       <SEO
-        title={`${project.title[lang]} ${project.platform} ${project.category[lang]} | ${t.meta.titleSuffix}`}
+        title={`${project.title[lang]} — ${project.category[lang]} | ${t.meta.titleSuffix}`}
         description={project.description[lang]}
       />
 
